@@ -18,3 +18,14 @@ $ docker run
   -p 0.0.0.0:8080:8080
   jleight/jenkins
 ```
+
+If you want to run Jenkins in a subdirectory instead of the root of your
+web server, you can pass a JENKINS_PREFIX variable with the path:
+
+```bash
+$ docker run
+  --name jenkins \
+  -p 0.0.0.0:8080:8080
+  -e JENKINS_PREFIX=/jenkins
+  jleight/jenkins
+```
