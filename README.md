@@ -2,7 +2,7 @@ jenkins
 ====
 
 The jenkins image runs [Jenkins](http://jenkins-ci.org/) on top of the
-[jleight/phusion-java](https://github.com/jleight/docker-phusion-java)
+[gizmochief7/phusion-java](https://github.com/gizmochief7/docker-phusion-java)
 container.
 
 
@@ -16,7 +16,7 @@ command:
 $ docker run
   --name jenkins \
   -p 0.0.0.0:8080:8080
-  jleight/jenkins
+  gizmochief7/jenkins
 ```
 
 If you want to run Jenkins in a subdirectory instead of the root of your
@@ -27,5 +27,5 @@ $ docker run
   --name jenkins \
   -p 0.0.0.0:8080:8080
   -e JENKINS_PREFIX=/jenkins
-  jleight/jenkins
+  gizmochief7/jenkins
 ```

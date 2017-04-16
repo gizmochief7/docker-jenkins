@@ -1,5 +1,5 @@
-FROM jleight/phusion-java:7
-MAINTAINER Jonathon Leight <jonathon.leight@jleight.com>
+FROM gizmochief7/phusion-java:7
+MAINTAINER Justin Ayers <gizmochief7@gmail.com>
 
 RUN set -x \
   && apt-get update \
@@ -11,7 +11,7 @@ RUN set -x \
 
 ENV APP_HOME    /opt/jenkins
 ENV APP_DATA    /var/opt/jenkins
-ENV APP_VERSION 1.580.3
+ENV APP_VERSION 2.7.4
 ENV APP_BASEURL http://mirrors.jenkins-ci.org/war-stable/
 ENV APP_PKGNAME jenkins.war
 ENV APP_URL     ${APP_BASEURL}/${APP_VERSION}/${APP_PKGNAME}
